@@ -1,3 +1,3 @@
-window.addEventListener("load", (event) => {
+window.onload = (event) => {
   alert(1);
-});
+};
