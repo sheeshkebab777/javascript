@@ -1,3 +1,1 @@
-window.onload = (event) => {
-  alert(1);
-};
+alert(1)
