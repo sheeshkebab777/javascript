@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  height: 90vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.canvas-container {
+  flex: 1;
+  width: 100%;
+  background-color: #e9ecef;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  gap: 10px;
+}
+
+#formulaInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#formulaInput:focus {
+  outline: none;
+  border-color: #666666;
+}
+
+.draw-button,
+.clear-button {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.draw-button {
+  background-color: #007BFF;
+  color: white;
+}
+
+.draw-button:hover {
+  background-color: #0056b3;
+}
+
+.draw-button:active {
+  background-color: #003f7f;
+}
+
+.clear-button {
+  background-color: #FF4D4D;
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #cc0000;
+}
+
+.clear-button:active {
+  background-color: #990000;
+}

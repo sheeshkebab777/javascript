@@ -1,0 +1,10 @@
+<div class="main-container">
+  <div class="canvas-container">
+    <canvas width="2000" height="1000" #canvasRef></canvas>
+  </div>
+  <div class="input-container">
+    <input [(ngModel)]="this.formula" type="text" id="formulaInput" placeholder="Enter formula here">
+    <button (click)="this.send()" class="draw-button">Send/Draw</button>
+    <button (click)="this.clear()" class="clear-button">Clear</button>
+  </div>
+</div>

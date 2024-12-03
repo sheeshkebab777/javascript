@@ -1,0 +1,21 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input [(ngModel)]="username" type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+    <div class="form-group">
+      <label for="ip">IP Address</label>
+      <input [(ngModel)]="ipAddress" type="text" id="ip" name="ip" placeholder="Enter IP address" required>
+    </div>
+    <div class="form-group">
+      <label for="port">Port</label>
+      <input [(ngModel)]="port" type="text" id="port" name="port" placeholder="Enter port number" required>
+    </div>
+    <button (click)="this.connect()" type="submit" class="login-button">Login</button>
+  </form>
+  @if(this.statusService.loginFailed){
+    <p>Login Failed...</p>
+  }
+</div>
